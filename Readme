@@ -1,0 +1,15 @@
+This project was completed while studying the "Complete C# Masterclass" by Denis Panjuta https://www.udemy.com/course/complete-csharp-masterclass/
+
+Initial design specifications include:
+-Make a tictactoe game using only the console for two players
+-All win conditions result in declaring who the winner is to the users
+-All invalid inputs are declared to the users
+-Game will automatically reset after a game is finished
+
+Extra features include:
+-Draw condition is declared to users
+
+Future features should include:
+-Options for three and four players, with larger boards for each set up
+-Highscore text file to track users that have won the most amount of games
+-Optimizations to follow "clean code" practices
