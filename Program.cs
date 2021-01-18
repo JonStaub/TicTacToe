@@ -96,60 +96,35 @@ namespace TicTacToe
                 //Made CheckForWinner method relative to the current player
                 if (board[0, 0] == currentPlayerIcon && board[0, 1] == currentPlayerIcon && board[0, 2] == currentPlayerIcon)
                 {
-                    Console.WriteLine($"Congratulations! {currentPlayer} is the winner!");
-                    Console.ReadKey();
-                    gameStatus = true;
-                    ResetBoard();
-
+                    WinCondition();
                 }
                 if (board[1, 0] == currentPlayerIcon && board[1, 1] == currentPlayerIcon && board[1, 2] == currentPlayerIcon)
                 {
-                    Console.WriteLine($"Congratulations! {currentPlayer} is the winner!");
-                    Console.ReadKey();
-                    gameStatus = true;
-                    ResetBoard();
+                    WinCondition();
                 }
                 if (board[2, 0] == currentPlayerIcon && board[2, 1] == currentPlayerIcon && board[2, 2] == currentPlayerIcon)
                 {
-                    Console.WriteLine($"Congratulations! {currentPlayer} is the winner!");
-                    Console.ReadKey(); 
-                    gameStatus = true;
-                    ResetBoard();
+                    WinCondition();
                 }
                 if (board[0, 0] == currentPlayerIcon && board[1, 0] == currentPlayerIcon && board[2, 0] == currentPlayerIcon)
                 {
-                    Console.WriteLine($"Congratulations! {currentPlayer} is the winner!");
-                    Console.ReadKey();
-                    gameStatus = true;
-                    ResetBoard();
+                    WinCondition();
                 }
                 if (board[0, 1] == currentPlayerIcon && board[1, 1] == currentPlayerIcon && board[2, 1] == currentPlayerIcon)
                 {
-                    Console.WriteLine($"Congratulations! {currentPlayer} is the winner!");
-                    Console.ReadKey(); 
-                    gameStatus = true;
-                    ResetBoard();
+                    WinCondition();
                 }
                 if (board[0, 2] == currentPlayerIcon && board[1, 2] == currentPlayerIcon && board[2, 2] == currentPlayerIcon)
                 {
-                    Console.WriteLine($"Congratulations! {currentPlayer} is the winner!");
-                    Console.ReadKey();
-                    gameStatus = true;
-                    ResetBoard();
+                    WinCondition();
                 }
                 if (board[0, 0] == currentPlayerIcon && board[1, 1] == currentPlayerIcon && board[2, 2] == currentPlayerIcon)
                 {
-                    Console.WriteLine($"Congratulations! {currentPlayer} is the winner!");
-                    Console.ReadKey(); 
-                    gameStatus = true;
-                    ResetBoard();
+                    WinCondition();
                 }
                 if (board[2, 0] == currentPlayerIcon && board[1, 1] == currentPlayerIcon && board[0, 2] == currentPlayerIcon)
                 {
-                    Console.WriteLine($"Congratulations! {currentPlayer} is the winner!");
-                    Console.ReadKey(); 
-                    gameStatus = true;
-                    ResetBoard();
+                    WinCondition();
                 }
             }
             else if (turnCount == 9)
@@ -159,6 +134,12 @@ namespace TicTacToe
                 gameStatus = true;
                 ResetBoard();
             }        
+    }
+    static void WinCondition(){
+        Console.WriteLine($"Congratulations! {currentPlayer} is the winner!");
+        Console.ReadKey(); 
+        gameStatus = true;
+        ResetBoard();  
     }
     static void ResetBoard()
     {
